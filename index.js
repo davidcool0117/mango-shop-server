@@ -5,7 +5,7 @@ const multer = require("multer");
 const { response } = require("express");
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const upload = multer({
 	storage: multer.diskStorage({
